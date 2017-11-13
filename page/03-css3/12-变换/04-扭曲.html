@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 300px;
+				height: 200px;
+				background: #00CCCC;
+				margin: 50px;
+				
+				transition:all 1s;
+			}			
+			
+			#div1:hover {
+				/*水平扭曲20度*/
+				/*transform: skewX(20deg);*/
+				
+				/*垂直扭曲20度*/
+				/*transform: skewY(20deg);*/
+				
+				/*水平垂直扭曲20度*/
+				transform: skew(20deg,20deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+</html>

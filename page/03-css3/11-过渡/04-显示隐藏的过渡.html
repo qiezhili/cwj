@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 200px;
+				height: 200px;
+				background: #00CCCC;
+				display: block;
+				
+				transition:all 1s;
+			}
+			
+			#div1:hover {
+				opacity: 0;
+				/*height: 0;*/
+				
+				/*显示隐藏不能直接过渡，需要利用宽度高度透明度变化间接实现*/
+				/*display: none;*/
+				/*visibility: hidden;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			显示隐藏的过渡
+		</div>
+		
+		<p>这是文字段落</p>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*有id属性*/
+			p[id] {
+				background: orange;
+			}
+			
+			/*id=red*/
+			p[id=red] {
+				color: red;
+			}	
+			
+			/*属性包含yellow单词*/
+			p[info~=yellow] {
+				background: yellow;
+			}	
+			
+			/*连字符开头匹配*/
+			p[info|=ab] {
+				color: red;
+			}	
+			
+			/*href以http开头*/
+			a[href^=http] {
+				color: red;
+			}
+			
+			/*href以html结尾*/
+			a[href$=html] {
+				font-size: 28px;
+			}
+			
+			/*包含xxx*/
+			a[href*=china] {
+				border:1px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<p>这是段落文字</p>
+		<p id="red">红色</p>
+		<p id="green">绿色</p>
+		
+		<p info="i like yellow too much">最喜欢的是黄色</p>
+		<p info="ab-cde-efg">连字符</p>
+		
+		<hr />
+		
+		<a href="http://www.baidu.com">百度一下</a>
+		<a href="index.html">返回首页</a>
+		<a href="http://www.chinasofti.com">中软国际</a>
+	</body>
+</html>

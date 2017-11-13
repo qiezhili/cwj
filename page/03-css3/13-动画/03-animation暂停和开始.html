@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 50px;
+				height: 100px;
+				background: #0cc;
+				
+				/*应用动画称*/
+				animation: donghua 2s ease-in 0.5s infinite alternate forwards;				
+			}
+			
+			/*鼠标悬停的时候暂停*/
+			#div1:hover {
+				animation-play-state: paused;
+			}	
+			
+			/*自定义动画*/
+			@keyframes donghua{
+				from {
+					width: 50px;
+				}
+				
+				to {
+					width: 800px;
+					background: orange;
+				}
+			}		
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			动画
+		</div>
+	</body>
+</html>

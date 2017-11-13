@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}		
+			
+			html,body {
+				height: 100%;
+			}	
+			
+			#div-left {
+				width: 200px;
+				height: 100%;
+				background: green;
+				float:left;
+			}
+			
+			#div-middle {
+				/*calc用百分比和像素做加减运算*/
+				width:calc(100% - 200px - 200px);
+				height:100%;
+				background:orange;
+				float:left;
+			}
+			
+			#div-right {
+				width: 200px;
+				height: 100%;
+				background: #0cc;
+				float:right;
+			}
+		</style>
+	</head>
+	<body>		
+		<div id="div-left">
+			左边
+		</div>
+		<div id="div-middle">
+			中间
+		</div>
+		<div id="div-right">
+			右边
+		</div>
+	</body>
+</html>

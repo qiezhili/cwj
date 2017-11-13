@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input[type=radio]:checked+label {
+				background: orange;
+				color: green;
+			}		
+			
+			input[type=text]:enabled {
+				background: #0cc;
+			}	
+			
+			input[type=text]:disabled {
+				background: pink;
+			}
+			
+			p::selection {
+				background: green;
+				color: blue;
+			}
+			
+			p::-moz-selection {
+				background: green;
+				color: blue;
+			}
+			
+			input[type=text]:focus {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="radio" name="sex" id="boy"/>
+		<label for="boy">男</label>
+		<input type="radio" name="sex" id="girl"/>
+		<label for="girl">女</label>
+		
+		<br />
+		<input type="text" value="请输入用户名"/>
+		
+		<br />
+		<input type="text" value="请输入密码" disabled/>
+		
+		<p>这个文字需要选中才能看到效果</p>
+	</body>
+</html>

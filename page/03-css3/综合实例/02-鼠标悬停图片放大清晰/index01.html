@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				background: #111111;
+			}	
+			
+			#container {
+				width: 100%;
+			}		
+			
+			#container .item {
+				width: 23.75%;
+				margin-left: 1%;
+				margin-bottom: 1%;
+				float: left;
+				overflow: hidden;
+			}
+			
+			#container .item img {
+				width: 100%;
+				display: block;
+				opacity: 0.5;
+				transition:all 0.8s;
+			}
+			
+			#container .item:hover img {
+				opacity: 1;
+				transform: scale(1.5,1.5);				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="item"><img src="img/g1.jpg" alt="" /></div>
+			<div class="item"><img src="img/g2.jpg" alt="" /></div>
+			<div class="item"><img src="img/g3.jpg" alt="" /></div>
+			<div class="item"><img src="img/g4.jpg" alt="" /></div>
+			<div class="item"><img src="img/g1.jpg" alt="" /></div>
+			<div class="item"><img src="img/g2.jpg" alt="" /></div>
+			<div class="item"><img src="img/g3.jpg" alt="" /></div>
+			<div class="item"><img src="img/g4.jpg" alt="" /></div>
+			<div class="item"><img src="img/g1.jpg" alt="" /></div>
+			<div class="item"><img src="img/g2.jpg" alt="" /></div>
+			<div class="item"><img src="img/g3.jpg" alt="" /></div>
+			<div class="item"><img src="img/g4.jpg" alt="" /></div>
+		</div>
+	</body>
+</html>

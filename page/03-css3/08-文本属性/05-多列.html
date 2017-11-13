@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 800px;
+				border:1px solid #ccc;
+				
+				/*分栏*/
+				column-count:3;
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				
+				/*栏间距*/
+				column-gap: 30px;
+				-webkit-column-gap: 30px;
+				-moz-column-gap: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			Css3就是对css2的延伸和扩展，兼容性必须是IE8以上，很多旧版浏览器（例如，旧版谷歌浏览器，旧版火狐）在使用css3的样式属性需要加上私有属性前缀才可以使用
+
+			谷歌浏览器：-webkit-  
+			火狐浏览器：-moz-
+			欧朋浏览器：-o-
+			IE浏览器：-ms-
+			
+			新增选择器：
+			:not 匹配不含有s选择符的元素E
+			:first-child 匹配父元素的第一个子元素E
+			:last-child 匹配父元素的最后一个子元素E
+			:nth-child 匹配父元素的第n个子元素E
+			:first-of-type 匹配同类型中的第一个同级兄弟元素E
+			:nth-of-type 匹配同类型中的唯一的一个同级兄弟元素E
+			:empty 空标签
+			
+			:checked 选中
+			:enabled 没有禁用的元素
+			:disabled 禁用的元素
+			::selection 选择文字时
+			:focus 获得焦点时
+			
+			E~F 兄弟选择器
+			[  ] 属性选择器
+			
+			border-radius 圆角
+			
+			box-shadow 阴影
+			
+			box-reflect 倒影，只有webkit内核浏览器支持
+			
+			background-origin 改变背景图片的起点
+			background-size 背景图片大小
+			
+			rgba：带透明度的颜色
+			transparent颜色代表透明色
+			
+			opacity 透明度
+			IE8兼容 filter:alpha(opacity=50)
+			
+			linear-gradient 线性渐变颜色
+			radial-gradient 径向渐变
+			
+			calc函数：可以把百分比和像素直接做加减运算（运算符两边一定要加空格）
+		</div>
+	</body>
+</html>

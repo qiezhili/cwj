@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 200px;
+				height: 200px;
+				background: #00CCCC;	
+				
+				transition: all 1s;			
+			}
+			
+			#div1:hover {				
+				/*水平和垂直平移*/
+				/*transform: translate(100px,50px);*/
+				/*transform: translate(100%,50%);*/
+				
+				/*水平平移*/
+				/*transform:translateX(-50%);*/
+				/*垂直平移*/
+				transform: translateY(-50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+</html>

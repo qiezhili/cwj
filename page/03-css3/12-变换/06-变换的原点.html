@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 200px;
+				height: 200px;
+				background: #00CCCC;	
+				line-height: 200px;
+				text-align: center;
+				margin: 150px;
+				
+				transition: all 5s;	
+				
+				/*设置变换的原点*/
+				/*transform-origin: center center;*/						
+				/*transform-origin: left center;*/
+				/*transform-origin: center top;*/
+				/*transform-origin:50px 50px;*/
+				transform-origin:0% 100%;
+			}
+			
+			#div1:hover {				
+				/*z轴旋转*/
+				transform: rotate(360deg);				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			旋转的内容
+		</div>
+	</body>
+</html>

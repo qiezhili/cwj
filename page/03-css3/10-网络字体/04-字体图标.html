@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*自定义字体*/
+			@font-face {
+				font-family:icomoon;
+				src: url(icomoon/fonts/icomoon.ttf);
+			}	
+			
+			ul,li {
+				list-style: none;
+			}
+			
+			ul li i {
+				font-family: icomoon;
+				font-style: normal;
+				font-size:36px;
+			}
+			
+			.home:before {
+				content: "\e600";
+			}	
+			
+			.folder:before {
+				content:"\e631";
+			}	
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<i class="home"></i>
+			</li>
+			<li>
+				<i class="folder"></i>
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 200px;
+				height: 100px;
+				background: #00CCCC;
+				
+				/*多个样式单独设置过渡*/
+				transition: width 5s,background 2s ease 3s;				
+			}			
+			
+			#div1:hover {
+				width: 800px;
+				background: orange;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			过渡效果
+		</div>
+	</body>
+</html>

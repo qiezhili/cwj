@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}			
+			
+			.container {
+				widows: 100%;
+			}
+			
+			.item {
+				width: 50%;
+				height: 300px;
+				float: left;
+				overflow: hidden;
+			}
+			
+			.item a {
+				display: block;
+				height: 100%;
+				position: relative;
+				transition: all 0.5s;
+			}
+			
+			.item a img {
+				min-width: 100%;
+				height: 100%;
+				display: block;
+			}
+			
+			.item a.p40 {
+				width: 40%;
+				float: left;
+			}
+			
+			.item a.p60 {
+				width: 60%;
+				float: right;
+			}
+			
+			.item .tips {
+				position: absolute;
+				width: 100%;
+				height: 30%;
+				line-height: 90px;
+				background: rgba(0,0,0,0.5);
+				color: #ffffff;
+				text-align: center;
+				top:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">
+				<a href="#" class="p40">
+					<img src="images/p11_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+				<a href="#" class="p60">
+					<img src="images/p12_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="p40">
+					<img src="images/p21_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+				<a href="#" class="p60">
+					<img src="images/p22_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="p40">
+					<img src="images/p31_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+				<a href="#" class="p60">
+					<img src="images/p32_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#" class="p40">
+					<img src="images/p41_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+				<a href="#" class="p60">
+					<img src="images/p42_600x400.jpg" alt="" />		
+					<div class="tips">鼠标悬停提示</div>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

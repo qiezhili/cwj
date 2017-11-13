@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>07--鼠标悬停百分比变换</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#con{
+				width: 100%;
+			}
+			.item{
+				height: 300px;
+				width: 50%;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			.item a{
+				display: block;
+				height: 100%;
+				position: relative;
+				transition: all 0.5s;
+			}
+			.item a img{
+				min-width: 100%;
+				height: 100%;
+				display: block;
+				
+			}
+			.item a.p40{
+				width: 60%;
+				float: left;
+				
+			}
+
+			.item a.p60{
+				width: 60%;				
+				position: absolute;
+				top: 0;
+				left: 40%;				
+			}
+
+			.item .tips{
+				position: absolute;
+				width: 100%;
+				height: 30%;
+				line-height: 90px;
+				background: rgba(0,0,0,0.7);
+				color: #FFFFFF;
+				text-align: center;
+				top: 100%;
+				transition: all 0.5s;
+			}
+
+			.item a:hover .tips{
+				top: 70%;
+			}
+
+			.item a.p40:hover+.p60{
+				position: absolute;				
+				top: 0;
+				left: 60%;				
+			}			
+		</style>
+	</head>
+	<body>
+		<div id="con">
+			<div class="item">
+				<a href="" class="p40">
+					<img src="images/p11_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+				<a href="" class="p60">
+					<img src="images/p12_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="" class="p40">
+					<img src="images/p21_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+				<a href="" class="p60">
+					<img src="images/p22_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="" class="p40">
+					<img src="images/p31_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+				<a href="" class="p60">
+					<img src="images/p32_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="" class="p40">
+					<img src="images/p41_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+				<a href="" class="p60">
+					<img src="images/p42_600x400.jpg" alt="" />
+					<div class="tips">提示</div>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

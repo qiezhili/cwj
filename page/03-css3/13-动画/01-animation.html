@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 50px;
+				height: 100px;
+				background: #0cc;
+				
+				/*应用动画的名称*/
+				animation-name: donghua;
+				/*动画执行的时间*/
+				animation-duration: 2s;			
+				/*动画过渡的类型*/
+				animation-timing-function: ease-in;
+				/*动画延迟时间*/
+				animation-delay: 0.5s;	
+				/*动画执行次数*/
+				animation-iteration-count: infinite;
+				/*是否有反向动画*/
+				animation-direction: alternate;
+				/*动画结束的状态，forwards表示停留在结束状态而不是起始状态*/
+				animation-fill-mode: forwards;
+			}	
+			
+			/*自定义动画*/
+			@keyframes donghua{
+				from {
+					width: 50px;
+				}
+				
+				to {
+					width: 800px;
+					background: orange;
+				}
+			}		
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			动画
+		</div>
+	</body>
+</html>

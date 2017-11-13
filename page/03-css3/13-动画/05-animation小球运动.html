@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 100px;
+				height: 100px;
+				background: #00CCCC;
+				border-radius: 50%;
+				position: absolute;
+				top:0;
+				left: 0;
+				
+				/*应用动画*/
+				animation: donghua 8s infinite;
+			}			
+			
+			@keyframes donghua {
+								
+				25% {
+					top:0;
+					left:400px;	
+					background: red;
+				}
+				
+				50% {
+					top:400px;
+					left:400px;	
+					background: orange;
+				}
+				
+				75% {
+					top:400px;
+					left:0;
+					background: green;
+				}
+				
+				to {
+					top:0;
+					left:0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul,li {
+				list-style:none;
+			}
+			
+			.container {
+				width: 540px;
+				height: 95px;
+				margin: 0 auto;				
+			}
+			
+			.container li {
+				width: 90px;
+				float: left;
+			}
+			
+			.container li a {
+				display: block;
+				height:35px;
+				line-height:35px;
+				padding-top: 60px;
+				text-decoration: none;
+				color: #666666;
+				font-size:14px;
+				text-align: center;
+				background: url(icons.png) no-repeat;
+				
+				transition:all 0.7s;
+			}
+			
+			/*自定义动画*/
+			@-webkit-keyframes huangdong{
+				0% {
+					transform: rotate(0deg);
+				}
+				
+				25% {
+					transform: rotate(-5deg);
+				}
+				
+				50% {
+					transform: rotate(0deg);
+				}
+				
+				75% {
+					transform: rotate(5deg);
+				}
+				
+				100% {
+					transform: rotate(0deg);
+				}
+			}
+			
+			/*鼠标悬停，左右晃动*/
+			.container li:hover a {
+				-webkit-animation: huangdong 0.2s infinite;
+				box-shadow: rgba(0,0,0,0.8) 0px 1px 3px;
+			}
+			
+			.container li .icon1 {
+				background-position: 16px -197px;
+			}
+			
+			.container li .icon2 {
+				background-position: -80px -197px;
+			}
+			
+			.container li .icon3 {
+				background-position: -174px -197px;
+			}
+			
+			.container li .icon4 {
+				background-position: -269px -197px;
+			}
+			
+			.container li .icon5 {
+				background-position: -364px -197px;
+			}
+			
+			.container li .icon6 {
+				background-position: -459px -197px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="container">
+			<li><a href="" class="icon1">论文提交</a></li>
+			<li><a href="" class="icon2">vpn服务</a></li>
+			<li><a href="" class="icon3">链接3</a></li>
+			<li><a href="" class="icon4">链接4</a></li>
+			<li><a href="" class="icon5">链接5</a></li>
+			<li><a href="" class="icon6">链接6</a></li>
+		</ul>
+	</body>
+</html>

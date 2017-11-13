@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 {
+				width: 50px;
+				height: 100px;
+				background: #00CCCC;
+				position: absolute;
+				top:0;
+				
+				/*执行多个动画*/
+				animation: changeWidth 3s forwards,changePosition 2s 3s forwards;
+			}	
+			
+			@keyframes changeWidth{				
+				100% {
+					width: 800px;
+				}				
+			}	
+			
+			@keyframes changePosition{
+				100% {
+					top:400px;
+				}
+			}	
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			动画
+		</div>
+	</body>
+</html>
